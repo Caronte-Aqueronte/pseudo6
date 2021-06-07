@@ -1,0 +1,18 @@
+Algoritmo pseudo6
+	Definir menoresde, mayoresde, edad, contador1, contador2 Como Entero
+	Definir promedio1, promedio2 Como Real
+	Para x<-1 Hasta 100 Con Paso 1 Hacer
+		Escribir "Ingrese la edad"
+		Leer edad
+		Si edad >= 25 Entonces
+			contador1 = contador1 + 1
+			mayoresde = mayoresde + edad
+		SiNo
+			contador2 = contador2 + 1
+			menoresde = menoresde + edad
+		Fin Si
+	Fin Para
+	promedio1 = mayoresde / contador1
+	promedio2 = menoresde / contador2
+	Escribir "El promedio de edades de los participantes menores de 25 años es de ", promedio2, " y de los mayores o iguales a 25 es de ",promedio1
+FinAlgoritmo
